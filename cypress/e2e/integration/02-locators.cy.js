@@ -1,8 +1,12 @@
 describe('CSS Locators', () => {
+    beforeEach(() =>{
+        cy.visit ('https://techglobal-training.com/frontend/html-elements')
+    
+    })
 
     it('Understanding CSS Syntax - Locating using Tags', () => {
 
-        cy.visit('https://techglobal-training.com/frontend/html-elements')
+       
 
         cy.get('button')
 
@@ -16,7 +20,7 @@ describe('CSS Locators', () => {
 
     it('Understanding CSS Syntax - Locating using class and id', () => {
 
-        cy.visit('https://techglobal-training.com/frontend/html-elements')
+        
 
         cy.get('#hello_paragraph')
         cy.get('#testing_paragraph')
